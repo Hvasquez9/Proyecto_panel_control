@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './panel-module.css';
+
 
 export const PanelControl = () =>{
 
@@ -12,7 +14,7 @@ export const PanelControl = () =>{
                 <h2>Logo</h2>
             </Link>
 
-           <ul>
+           <ul className='nav_list'>
            <Link to={"/Home"}>
                <li>Home</li>
             </Link>
