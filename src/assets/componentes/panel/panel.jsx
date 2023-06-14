@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './panel-module.css';
 
 
+
 export const PanelControl = () =>{
 
 
@@ -11,20 +12,28 @@ export const PanelControl = () =>{
         <>
         <nav>
             <Link to={"/"}>
-                <h2>Logo</h2>
+                <h2>logo</h2>
             </Link>
 
            <ul className='nav_list'>
-           <Link to={"/Home"}>
-               <li>Home</li>
-            </Link>
-
             <Link to={"/Productos"}>
-               <li>Productos</li>
+               <button>Productos</button>
             </Link>
 
             <Link to={"/Pedidos"}>
-                <li>Pedidos</li>
+                <button>Pedidos</button>
+            </Link>
+
+            <Link to={"/Ingresos"}>
+                <button>Ingresos totales</button>
+            </Link>
+
+            <Link to={"/Promedio"}>
+                <button>Precio promedio</button>
+            </Link>
+
+            <Link to={"/Mas_vendido"}>
+                <button>Mas vendidos</button>
             </Link>
            </ul>
         </nav>
