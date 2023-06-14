@@ -13,7 +13,7 @@ export const Productos = () => {
 
     const respuestaJson =  await respuesta.json()
     setProducts(respuestaJson)
-    console.log(respuestaJson.length)
+    console.log(respuestaJson)
 
   }
 
