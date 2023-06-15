@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react"
+import './pedidos-module.css';
 
 export const Pedidos = () => {
 
@@ -22,11 +23,11 @@ export const Pedidos = () => {
   return(
       <>
 
-      <h1>cantidad de pedidos: {pedidos? pedidos.length: "cargando..."}</h1>
+      <h1 className="cantidad">Cantidad de pedidos: {pedidos? pedidos.length: "cargando..."}</h1>
 
       <ul>
         {pedidos?.map((pedido)=>{
-          return(<div key={pedido.id}>Usuario : {pedido.userId} Fecha de pedido : {pedido.date} </div>)
+          return(<div className="contenedorInformacion" key={pedido.id}>Usuario : {pedido.userId} Fecha de pedido : {pedido.date}</div>)
         })}
       </ul>
 

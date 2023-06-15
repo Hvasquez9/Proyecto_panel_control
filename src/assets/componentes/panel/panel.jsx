@@ -4,6 +4,7 @@ import './panel-module.css';
 
 
 
+
 export const PanelControl = () =>{
 
 
@@ -12,7 +13,7 @@ export const PanelControl = () =>{
         <>
         <nav>
             <Link to={"/"}>
-                <h2>logo</h2>
+                <img className='imagen' src="https://innokabi.com/wp-content/uploads/2020/07/C%C3%B3mo-crear-tienda-online-Innokabi-Blog.jpg" alt="" />
             </Link>
 
            <ul className='nav_list'>
